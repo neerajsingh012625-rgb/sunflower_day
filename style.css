@@ -36,19 +36,15 @@ body {
   text-shadow: 0 0 12px rgba(255, 235, 59, 0.9);
 }
 
-/* FLOWERS — WHITE BACKGROUND REMOVAL */
+/* FLOWERS */
 .flower {
   position: absolute;
   top: 35%;
   left: 50%;
   transform: translateX(-50%) scale(0);
   opacity: 0;
-
-  /* MAGIC LINE */
-  mix-blend-mode: multiply;
-
-  /* soft edge */
-  filter: drop-shadow(0 0 25px rgba(255, 200, 120, 0.6));
+  pointer-events: none;
+  filter: drop-shadow(0 0 30px rgba(255, 200, 120, 0.8));
 }
 
 .rose {
@@ -57,9 +53,7 @@ body {
 
 .sunflower {
   width: 200px;
-  filter:
-    drop-shadow(0 0 30px rgba(255, 215, 80, 0.9))
-    brightness(1.05);
+  filter: drop-shadow(0 0 40px rgba(255, 215, 80, 1));
 }
 
 /* PHOTOS */
@@ -81,7 +75,7 @@ body {
   filter: drop-shadow(0 0 15px rgba(255,255,255,0.4));
 }
 
-/* FINAL LINE */
+/* FINAL */
 .final {
   position: absolute;
   bottom: 5%;
