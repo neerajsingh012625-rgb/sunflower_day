@@ -5,13 +5,10 @@
 }
 
 body {
-  background: radial-gradient(circle at top, #000, #180011);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: "Georgia", serif;
+  background: radial-gradient(circle at top, #000, #16000f);
   height: 100vh;
   overflow: hidden;
+  font-family: "Georgia", serif;
   color: white;
 }
 
@@ -22,22 +19,36 @@ body {
   text-align: center;
 }
 
+/* TEXT */
 .text {
   position: absolute;
+  top: 15%;
   width: 100%;
   font-size: 2em;
   opacity: 0;
-  color: #ffe6aa;
-  text-shadow: 0 0 8px rgba(255, 230, 170, 0.7);
+  color: #ffe6b3;
+  text-shadow: 0 0 12px rgba(255, 220, 160, 0.7);
 }
 
+.name {
+  color: #ffeb3b;
+  font-size: 1.3em;
+  text-shadow: 0 0 12px rgba(255, 235, 59, 0.9);
+}
+
+/* FLOWERS — WHITE BACKGROUND REMOVAL */
 .flower {
   position: absolute;
   top: 35%;
   left: 50%;
   transform: translateX(-50%) scale(0);
   opacity: 0;
-  filter: drop-shadow(0 0 20px rgba(255, 200, 80, 0.6));
+
+  /* MAGIC LINE */
+  mix-blend-mode: multiply;
+
+  /* soft edge */
+  filter: drop-shadow(0 0 25px rgba(255, 200, 120, 0.6));
 }
 
 .rose {
@@ -46,8 +57,12 @@ body {
 
 .sunflower {
   width: 200px;
+  filter:
+    drop-shadow(0 0 30px rgba(255, 215, 80, 0.9))
+    brightness(1.05);
 }
 
+/* PHOTOS */
 .photos {
   position: absolute;
   bottom: 8%;
@@ -61,23 +76,18 @@ body {
   width: 160px;
   height: 220px;
   object-fit: cover;
-  border-radius: 10px;
+  border-radius: 12px;
   opacity: 0;
-  filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.4));
+  filter: drop-shadow(0 0 15px rgba(255,255,255,0.4));
 }
 
+/* FINAL LINE */
 .final {
   position: absolute;
   bottom: 5%;
   width: 100%;
-  font-size: 2em;
+  font-size: 2.2em;
   opacity: 0;
   color: #ffd54f;
-  text-shadow: 0 0 10px rgba(255, 213, 79, 0.7);
-}
-
-.name {
-  color: #ffeb3b;
-  font-size: 1.2em;
-  text-shadow: 0 0 8px rgba(255, 235, 59, 0.8);
+  text-shadow: 0 0 14px rgba(255, 213, 79, 0.9);
 }
