@@ -95,3 +95,17 @@ body {
   color:#ffd54f;
   text-shadow:0 0 14px rgba(255,213,79,0.9);
 }
+
+/* AUDIO START SCREEN */
+#startOverlay{
+  position: fixed;
+  inset: 0;
+  background: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+  z-index: 9999;
+  cursor: pointer;
+}
